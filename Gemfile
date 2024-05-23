@@ -15,11 +15,11 @@ gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 6.3.1"
 
-# gem "wicked_pdf", "~> 2.1"
+gem "wicked_pdf", "~> 2.1"
 
-gem "redis"
+gem "redis", '~> 4.0'
 
-gem "sidekiq"
+gem "sidekiq", '~> 6.5.1'
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
