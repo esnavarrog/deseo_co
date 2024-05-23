@@ -1,0 +1,6 @@
+# .slugignore
+test/
+spec/
+tmp/
+log/
+*.md
