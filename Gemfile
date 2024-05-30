@@ -5,17 +5,18 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem "decidim", "0.28.1"
-# gem "decidim-conferences", "0.28.1"
+gem "decidim-conferences", "0.28.1"
 # gem "decidim-design", "0.28.1"
 # gem "decidim-elections", "0.28.1"
-# gem "decidim-initiatives", "0.28.1"
-# gem "decidim-templates", "0.28.1"
+gem "decidim-initiatives", "0.28.1"
+gem "decidim-templates", "0.28.1"
 
 gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 6.3.1"
 
 gem "wicked_pdf", "~> 2.1"
+
 
 # gem "redis", '~> 4.0'
 
