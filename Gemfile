@@ -35,9 +35,7 @@ group :development do
   gem "spring", "~> 2.0"
   gem "spring-watcher-listen", "~> 2.0"
   gem "web-console", "~> 4.2"
-  gem "wkhtmltopdf-binary"
 end
 
 group :production do
-  gem "wkhtmltopdf-heroku", '2.12.6.0'
 end
