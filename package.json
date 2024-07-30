@@ -2,6 +2,9 @@
   "name": "deseo-co",
   "version": "0.1.0",
   "private": true,
+  "engine": {
+    "node": "20.9.1"
+  },
   "dependencies": {
     "@decidim/core": "^0.28.1",
     "@decidim/elections": "^0.28.1",
