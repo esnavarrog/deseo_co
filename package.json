@@ -22,5 +22,6 @@
   },
   "browserslist": [
     "extends @decidim/browserslist-config"
-  ]
+  ],
+  "packageManager": "yarn@1.22.22"
 }
