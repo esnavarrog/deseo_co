@@ -32,7 +32,7 @@ RUN bundle exec rails db:create
 RUN bundle exec rails db:migrate
 
 # Exponer el puerto que la aplicación va a usar
-EXPOSE 3000
+EXPOSE 80
 
 # Comando para iniciar la aplicación
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
