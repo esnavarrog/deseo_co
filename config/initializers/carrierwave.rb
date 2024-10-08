@@ -16,8 +16,8 @@ CarrierWave.configure do |config|
   config.fog_provider = 'fog/aws'                                           # required
   config.fog_credentials = {
     provider:              'AWS',                                           # required
-    aws_access_key_id:     Rails.application.secrets.aws_access_key_id,     # required
-    aws_secret_access_key: Rails.application.secrets.aws_secret_access_key, # required
+    aws_access_key_id:     Rails.application.credentials.aws_access_key_id,     # required
+    aws_secret_access_key: Rails.application.credentials.aws_secret_access_key, # required
     region:                'sa-east-1',                                     # optional, defaults to 'us-east-1'
   }
   config.fog_directory  = 'deseocompartir'                                  # required
