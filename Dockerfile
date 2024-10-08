@@ -36,6 +36,7 @@ ARG AWS_SECRET_ACCESS_KEY
 ARG AWS_REGION
 ARG AWS_BUCKET
 ARG AWS_ENDPOINT
+ARG secret_key_base
 
 # Precompila los activos (CSS, JS, etc.) para producción
 RUN bundle exec rails assets:precompile

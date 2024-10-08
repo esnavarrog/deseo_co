@@ -15,6 +15,7 @@ services:
         AWS_REGION: ${AWS_REGION}
         AWS_BUCKET: ${AWS_BUCKET}
         AWS_ENDPOINT: ${AWS_ENDPOINT}
+        secret_key_base: ${secret_key_base}
     command: bundle exec puma -C config/puma.rb
     volumes:
       - .:/app
@@ -35,3 +36,4 @@ services:
       - aws_access_key_id=${aws_access_key_id}
       - aws_secret_access_key=${aws_secret_access_key}
       - PORT=${PORT}
+      - secret_key_base=${secret_key_base}
