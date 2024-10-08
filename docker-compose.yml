@@ -19,6 +19,7 @@ services:
     command: bundle exec puma -C config/puma.rb
     volumes:
       - .:/app
+      - ./config/master.key:/app/config/master.key
     ports:
       - "80:80"
     environment:
