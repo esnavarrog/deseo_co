@@ -25,6 +25,18 @@ COPY . .
 # Instala las dependencias de JavaScript
 RUN yarn install
 
+ARG DATABASE_HOST
+ARG DATABASE_URL
+ARG DATABASE_PORT
+ARG DATABASE_USERNAME
+ARG DATABASE_PASSWORD
+ARG RAILS_ENV
+ARG AWS_ACCESS_KEY_ID
+ARG AWS_SECRET_ACCESS_KEY
+ARG AWS_REGION
+ARG AWS_BUCKET
+ARG AWS_ENDPOINT
+
 # Precompila los activos (CSS, JS, etc.) para producción
 RUN bundle exec rails assets:precompile
 
