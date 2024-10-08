@@ -12,6 +12,7 @@ s3:
   secret_access_key: <%= Rails.application.credentials.aws_secret_access_key %>
   bucket: <%= Rails.application.credentials.AWS_BUCKET %>
   region: sa-east-1
+  endpoint: <%= Rails.application.credentials.AWS_ENDPOINT %>
 
 # azure:
 #   service: AzureStorage
