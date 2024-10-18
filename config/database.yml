@@ -88,3 +88,10 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+  database: defaultdb
+  username: doadmin
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  host: db-postgresql-nyc3-23182-do-user-17891099-0.h.db.ondigitalocean.com
+  port: 25060
+  sslmode: require
+  pool: 5
