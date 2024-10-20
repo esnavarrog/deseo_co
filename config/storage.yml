@@ -8,9 +8,9 @@ local:
 
 s3:
   service: S3
-  access_key_id: <%= Rails.application.credentials.aws_access_key_id %>
-  secret_access_key: <%= Rails.application.credentials.aws_secret_access_key %>
-  bucket: <%= Rails.application.credentials.AWS_BUCKET %>
+  access_key_id: ENV["aws_access_key_id"] %>
+  secret_access_key: ENV["aws_secret_access_key"] %>
+  bucket: <%= ENV["AWS_BUCKET"] %>
   region: sa-east-1
   endpoint: deseo-compartir-6tr89wxujweezzxryncah68ada6ghsae1a-s3alias
 
@@ -41,9 +41,9 @@ s3:
 #   primary: local
 #   mirrors: [ s3, gcs, azure ]
 
-# tigris:
-#   service: S3
-#   access_key_id: <%= ENV["AWS_ACCESS_KEY_ID"] %>
-#   secret_access_key: <%= ENV["AWS_SECRET_ACCESS_KEY"] %>
-#   endpoint: <%= ENV["AWS_ENDPOINT_URL_S3"] %>
-#   bucket: <%= ENV["BUCKET_NAME"] %>
+tigris:
+  service: S3
+  access_key_id: <%= ENV["AWS_ACCESS_KEY_ID"] %>
+  secret_access_key: <%= ENV["AWS_SECRET_ACCESS_KEY"] %>
+  endpoint: deseo-compartir-6tr89wxujweezzxryncah68ada6ghsae1a-s3alias
+  bucket: <%= ENV["BUCKET_NAME"] %>
