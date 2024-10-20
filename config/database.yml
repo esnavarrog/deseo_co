@@ -22,6 +22,7 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
+  database: defaultdb
   host: db-postgresql-nyc3-23182-do-user-17891099-0.h.db.ondigitalocean.com
   port: 25060
   username: doadmin
