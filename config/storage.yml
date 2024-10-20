@@ -10,9 +10,9 @@ s3:
   service: S3
   access_key_id: ENV["aws_access_key_id"] %>
   secret_access_key: ENV["aws_secret_access_key"] %>
-  bucket: <%= ENV["AWS_BUCKET"] %>
+  bucket: 'arn:aws:s3:sa-east-1:706864506634:accesspoint/deseo-compartir'
   region: sa-east-1
-  endpoint: s3://arn:aws:s3:sa-east-1:706864506634:accesspoint/deseo-compartir
+  endpoint: 'https://s3-accesspoint.sa-east-1.amazonaws.com'
 
 # azure:
 #   service: AzureStorage
@@ -45,5 +45,5 @@ tigris:
   service: S3
   access_key_id: <%= ENV["AWS_ACCESS_KEY_ID"] %>
   secret_access_key: <%= ENV["AWS_SECRET_ACCESS_KEY"] %>
-  endpoint: s3://arn:aws:s3:sa-east-1:706864506634:accesspoint/deseo-compartir
-  bucket: <%= ENV["BUCKET_NAME"] %>
+  endpoint: 'https://s3-accesspoint.sa-east-1.amazonaws.com'
+  bucket: 'arn:aws:s3:sa-east-1:706864506634:accesspoint/deseo-compartir'
