@@ -12,7 +12,7 @@ s3:
   secret_access_key: <%= Rails.application.credentials.aws_secret_access_key %>
   bucket: <%= Rails.application.credentials.AWS_BUCKET %>
   region: sa-east-1
-  endpoint: <%= ENV["AWS_ENDPOINT"] %>
+  endpoint: deseo-compartir-6tr89wxujweezzxryncah68ada6ghsae1a-s3alias
 
 # azure:
 #   service: AzureStorage
