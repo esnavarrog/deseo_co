@@ -21,11 +21,11 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: <%= ENV.fetch("DATABASE_HOST")  %>
-  port: <%= ENV.fetch("DATABASE_PORT")  %>
-  username: <%= ENV.fetch("DATABASE_USERNAME")  %>
-  password: <%= ENV.fetch("DATABASE_PASSWORD")  %>
+  pool: 5
+  host: db-postgresql-nyc3-23182-do-user-17891099-0.h.db.ondigitalocean.com
+  port: 25060
+  username: doadmin
+  password: <%= ENV["DATABASE_PASSWORD"] %>
 
 development:
   <<: *default
@@ -87,10 +87,6 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  database: defaultdb
-  username: doadmin
   password: <%= ENV['DATABASE_PASSWORD'] %>
-  host: db-postgresql-nyc3-23182-do-user-17891099-0.h.db.ondigitalocean.com
-  port: 25060
   sslmode: require
   pool: 5
