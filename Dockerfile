@@ -38,7 +38,6 @@ ARG AWS_ENDPOINT
 # Precompila los activos (CSS, JS, etc.) para producción
 RUN bundle exec rails assets:precompile
 
-RUN bundle exec rails db:create
 RUN bundle exec rails db:migrate
 
 # Exponer el puerto que la aplicación va a usar
