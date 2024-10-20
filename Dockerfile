@@ -35,13 +35,13 @@ ARG AWS_REGION
 ARG AWS_BUCKET
 ARG AWS_ENDPOINT
 
-# Precompila los activos (CSS, JS, etc.) para producción
-RUN bundle exec rails assets:precompile
-
-RUN bundle exec rails db:migrate
 
 # Exponer el puerto que la aplicación va a usar
 EXPOSE 80
 
+# Precompila los activos (CSS, JS, etc.) para producción
+RUN bundle exec rails assets:precompile
+
+RUN bundle exec rails db:migrate
 # Comando para iniciar la aplicación
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
